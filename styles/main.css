@@ -152,6 +152,113 @@ body {
     line-height: 1.5rem;
 }
 
+/* Slider Section */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(../assets/bg.png);
+}
+
+.slider-header {
+    font-size: 2.3rem;
+    line-height: 2.855rem;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1.25rem;
+}
+
+.card {
+    text-align: center;
+    border-radius: .5rem;
+    height: 24.839rem;
+    width: 18.39rem;
+}
+
+.card img {
+    margin: 2.6rem auto 1.6rem auto;
+    height: 6.683rem;
+    width: 6.683rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.card-description {
+    font-size: .77rem;
+    line-height: 1.41rem;
+    margin: 1.65rem 2.4rem;
+    color: #808080;
+}
+
+.card a {
+    font-size: .75rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1.9rem auto 2.9rem auto;
+}
+
+.card_1 {
+    background: linear-gradient(to bottom, #DEF5FF, 40%, white);
+    border: 1px solid #DEF5FF;
+}
+
+.card_2 {
+    background: linear-gradient(to bottom, #FFF4DC, 40%, white);
+    border: 1px solid #FFF4DC;
+}
+
+.card_3 {
+    background: linear-gradient(to bottom, #F2E8FF, 40%, white);
+    border: 1px solid #F2E8FF;
+}
+
+.card_1 a {
+    color: #64C8FF;
+}
+
+.card_2 a {
+    color: #F0AA00;
+}
+
+.card_3 a {
+    color: #8700FF;
+}
+
+.dot {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 4rem .2rem;
+}
+
+.fa-chevron-left {
+    position: relative;
+    bottom: -.875rem;
+    left: 1.2rem;
+    color: white;
+}
+
+.fa-chevron-right {
+    position: relative;
+    bottom: -.875rem;
+    left: 1.2rem;
+    color: white;
+}
+
 @media screen and (max-width: 576px) {
 
     /* Small Device Navbar */
@@ -217,8 +324,59 @@ body {
         width: auto;
         border-radius: .4rem;
         padding: .3rem 1.2rem;
-        margin-bottom: 5px;
         font-size: .8rem;
         line-height: 1.5rem;
+    }
+
+    /* Small Device Slider Section */
+
+    .slider-header {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1.25rem;
+    }
+
+    .card {
+        width: 17.85rem;
+        height: 17rem;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .card img {
+        height: 4.683rem;
+        width: 4.683rem;
+        margin: 1.6rem auto 1.6rem auto
+    }
+
+    .card-title {
+        font-size: .8125rem;
+        font-weight: bold;
+        line-height: 1.04rem;
+        margin: 0 1.1rem;
+    }
+
+    .card-description {
+        font-size: 0.511rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 0.96rem;
+        margin: 1rem 4rem;
+        /* margin: 0 auto 1.1rem auto; */
+    }
+
+    .card a {
+        font-size: 0.511rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 0.96rem;
     }
 }
