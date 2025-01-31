@@ -28,6 +28,12 @@ body {
 
 /* Navbar Section */
 
+marquee {
+    font-size: 1rem;
+    color: var(--color-paste);
+    text-align: center;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-evenly;
@@ -139,7 +145,8 @@ body {
     margin: 1.2rem 0;
 }
 
-.hero-title-description button, .story-container > div > button{
+.hero-title-description button,
+.story-container>div>button {
     width: 9.7rem;
     padding: .5rem;
     font-weight: bold;
@@ -154,7 +161,8 @@ body {
 
 /* Slider Section */
 
-.slider-container, .story-container {
+.slider-container,
+.story-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +171,8 @@ body {
     background-image: url(../assets/bg.png);
 }
 
-.slider-header, .story-header {
+.slider-header,
+.story-header {
     font-size: 2.3rem;
     line-height: 2.855rem;
     font-weight: bold;
@@ -292,14 +301,14 @@ body {
     column-gap: 1rem;
 }
 
-.story-card-2 > div {
+.story-card-2>div {
     background-color: white;
     border-radius: 1rem;
     width: 14.53rem;
     height: 15.08rem;
 }
 
-.story-card-2 > div > h3 {
+.story-card-2>div>h3 {
     font-size: .767rem;
 }
 
@@ -317,8 +326,11 @@ body {
     border-top-right-radius: .8rem;
 }
 
-.story-card > h3, .story-card > button, .story-card > p,
-.story-card > div > h3, .story-card > div > button {
+.story-card>h3,
+.story-card>button,
+.story-card>p,
+.story-card>div>h3,
+.story-card>div>button {
     text-align: left;
     margin-left: 2rem;
 }
@@ -338,7 +350,8 @@ body {
     margin-right: 2rem;
 }
 
-.story-card-grid button, .story-card-1 button {
+.story-card-grid button,
+.story-card-1 button {
     font-size: .767rem;
     border-radius: 2.45rem;
     color: white;
@@ -365,7 +378,8 @@ body {
     bottom: 1.6rem;
 }
 
-.story-card-grid:nth-child(2) button, .story-card-min button {
+.story-card-grid:nth-child(2) button,
+.story-card-min button {
     background-color: #5D58F0;
 }
 
@@ -378,5 +392,69 @@ body {
 }
 
 button {
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #01ACFD;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+    padding-top: 6rem;
+    gap: 4rem;
+    height: 20rem;
+    width: 46%;
+    margin: 0 auto;
+}
+
+.footer-header div {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    max-width: 10rem;
+    line-height: 2rem;
+}
+
+.footer-header p {
+    max-width: 20rem;
+    color: #FFFFFF
+}
+
+.footer-header div h1 {
+    color: white;
+    font-size: 2.1rem;
+    margin: 0;
+}
+
+.footer-menu h3 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contact h3 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.contact li {
+    list-style: none;
+    display: inline;
+    margin-right: .51rem;
     cursor: pointer;
 }
