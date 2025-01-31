@@ -28,12 +28,6 @@ body {
 
 /* Navbar Section */
 
-marquee {
-    font-size: 1rem;
-    color: var(--color-paste);
-    text-align: center;
-}
-
 .nav-container {
     display: flex;
     justify-content: space-evenly;
@@ -115,6 +109,12 @@ marquee {
     display: none;
 }
 
+marquee {
+    font-size: 1rem;
+    color: var(--color-paste);
+    text-align: center;
+}
+
 /* Hero Section */
 
 .hero-container {
@@ -159,6 +159,12 @@ marquee {
     line-height: 1.5rem;
 }
 
+.hero-title-description button:hover, .btn-view-all button:hover{
+    background-color: var(--color-orange);
+    color: white;
+    border: 0px;
+}
+
 /* Slider Section */
 
 .slider-container,
@@ -176,6 +182,7 @@ marquee {
     font-size: 2.3rem;
     line-height: 2.855rem;
     font-weight: bold;
+
 }
 
 .card-container {
@@ -253,6 +260,11 @@ marquee {
     border-radius: 50%;
     display: inline-block;
     margin: 4rem .2rem;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: black;
 }
 
 .fa-chevron-left {
@@ -276,8 +288,8 @@ marquee {
 }
 
 .story-header {
-
     margin: 3rem 0 4rem;
+    margin-top: 0px;
 }
 
 .story-card-container {
