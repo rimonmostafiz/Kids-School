@@ -1,0 +1,204 @@
+@media screen and (max-width: 576px) {
+
+    /* Navbar Section */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    nav {
+        border: 1px solid var(--color-orange);
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .icon-title p,
+    .contact button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+        margin: 0 .5rem;
+    }
+
+    /* Hero Section */
+
+    .hero-container,
+    .story-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 92.5%;
+        margin: auto auto;
+        gap: 1rem;
+    }
+
+    .hero-title-description {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .description {
+        font-weight: var(--font-weight-medium);
+        font-size: .75rem;
+    }
+
+    .banner img {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .hero-title-description button,
+    .story-container>div>button {
+        width: auto;
+        border-radius: .4rem;
+        padding: .3rem 1.2rem;
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    /* Slider Section */
+
+    .slider-header {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1.25rem;
+    }
+
+    .card {
+        width: 17.85rem;
+        height: 17rem;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .card img {
+        height: 4.683rem;
+        width: 4.683rem;
+        margin: 1.6rem auto 1.6rem auto
+    }
+
+    .card-title {
+        font-size: .8125rem;
+        font-weight: bold;
+        line-height: 1.04rem;
+        margin: 0 1.1rem;
+    }
+
+    .card-description {
+        font-size: 0.511rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 0.96rem;
+        margin: 1rem 4rem;
+        /* margin: 0 auto 1.1rem auto; */
+    }
+
+    .card a {
+        font-size: 0.511rem;
+        font-weight: var(--font-weight-medium);
+        line-height: 0.96rem;
+    }
+
+    /* Story Section */
+
+    .story-header {
+        font-size: 1.3rem;
+        margin: 2rem 0 0;
+    }
+
+    .story-card-1 {
+        display: none;
+    }
+
+    .story-card-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 8.6675rem;
+        height: 8.9796rem;
+        row-gap: .5rem;
+        column-gap: .5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story-card-2>div {
+        width: 8.65rem;
+        height: 8.9795rem;
+    }
+
+    .story-card-2>div>img {
+        width: 173.27px;
+        height: 105.39px;
+    }
+
+    .story-card-2>div>button {
+        width: 103.91px;
+        height: 22.83px;
+        font-size: 9.13px;
+    }
+
+    .story-card-2>div>h3 {
+        font-size: .45rem;
+        line-height: .85rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .story-card>div>button {
+        margin-left: 1.2rem;
+    }
+
+    .story-card-grid button {
+        bottom: .8rem
+    }
+
+    .story-card-container {
+        height: 17.5rem;
+        align-items: self-start;
+    }
+
+    .story-container>div>button {
+        padding: 0.2rem 3.2rem;
+        font-size: .8rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        border-radius: .6rem;
+        margin: 1rem;
+    }
+
+    .btn-view-all {
+        margin: 0 auto;
+    }
+
+    .story-card-min {
+        display: inline;
+    }
+
+    .story-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%px;
+    }
+}

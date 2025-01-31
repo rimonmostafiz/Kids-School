@@ -26,7 +26,7 @@ body {
     color: var(--color-black)
 }
 
-/* Navbar styels */
+/* Navbar Section */
 
 .nav-container {
     display: flex;
@@ -34,7 +34,7 @@ body {
     align-items: center;
     gap: 9.6rem;
     margin: 0 auto;
-    width: 95%;
+    width: 46%;
 }
 
 .icon-title {
@@ -117,7 +117,7 @@ body {
     align-items: center;
     gap: 7.6rem;
     margin: 0 auto;
-    width: 95%;
+    width: 46%;
 }
 
 .title {
@@ -139,7 +139,7 @@ body {
     margin: 1.2rem 0;
 }
 
-.hero-title-description button {
+.hero-title-description button, .story-container > div > button{
     width: 9.7rem;
     padding: .5rem;
     font-weight: bold;
@@ -153,7 +153,8 @@ body {
 }
 
 /* Slider Section */
-.slider-container {
+
+.slider-container, .story-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +163,7 @@ body {
     background-image: url(../assets/bg.png);
 }
 
-.slider-header {
+.slider-header, .story-header {
     font-size: 2.3rem;
     line-height: 2.855rem;
     font-weight: bold;
@@ -209,30 +210,30 @@ body {
     margin: 1.9rem auto 2.9rem auto;
 }
 
-.card_1 {
+.card-1 {
     background: linear-gradient(to bottom, #DEF5FF, 40%, white);
     border: 1px solid #DEF5FF;
 }
 
-.card_2 {
+.card-2 {
     background: linear-gradient(to bottom, #FFF4DC, 40%, white);
     border: 1px solid #FFF4DC;
 }
 
-.card_3 {
+.card-3 {
     background: linear-gradient(to bottom, #F2E8FF, 40%, white);
     border: 1px solid #F2E8FF;
 }
 
-.card_1 a {
+.card-1 a {
     color: #64C8FF;
 }
 
-.card_2 a {
+.card-2 a {
     color: #F0AA00;
 }
 
-.card_3 a {
+.card-3 a {
     color: #8700FF;
 }
 
@@ -259,124 +260,123 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 576px) {
+/* Story Section */
 
-    /* Small Device Navbar */
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        gap: 0.5rem;
-        width: 100%;
-    }
+.story-container {
+    background: linear-gradient(to top, rgb(254, 163, 1, 30%), 30%, white), url(../assets/bg.png);
+}
 
-    nav {
-        border: 1px solid var(--color-orange);
-    }
+.story-header {
 
-    .menu ul {
-        display: none;
-    }
+    margin: 3rem 0 4rem;
+}
 
-    .icon-title p,
-    .contact button {
-        display: none;
-    }
+.story-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1.25rem;
+}
 
-    .menu-icon {
-        display: inline;
-        margin: 0 .5rem;
-    }
+.story-card-1 {
+    background-color: white;
+}
 
-    /* Small Device Hero Section */
-    .hero-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column-reverse;
-        width: 92.5%;
-        margin: 0 auto;
-        gap: 1rem;
-    }
+.story-card-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30.05rem;
+    height: 31.12rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
 
-    .hero-title-description {
-        text-align: center;
-    }
+.story-card-2 > div {
+    background-color: white;
+    border-radius: 1rem;
+    width: 14.53rem;
+    height: 15.08rem;
+}
 
-    .title {
-        font-size: 1.6rem;
-        line-height: 2rem;
-    }
+.story-card-2 > div > h3 {
+    font-size: .767rem;
+}
 
-    .description {
-        font-weight: var(--font-weight-medium);
-        font-size: .75rem;
-    }
+.story-card {
+    /* background-color: white; */
+    border-radius: 16px;
+    text-align: center;
+    border-radius: .8rem;
+    height: 31.526rem;
+    width: 27.01rem;
+}
 
-    .banner img {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1rem;
-    }
+.story-card img {
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
 
-    .hero-title-description button {
-        width: auto;
-        border-radius: .4rem;
-        padding: .3rem 1.2rem;
-        font-size: .8rem;
-        line-height: 1.5rem;
-    }
+.story-card > h3, .story-card > button, .story-card > p,
+.story-card > div > h3, .story-card > div > button {
+    text-align: left;
+    margin-left: 2rem;
+}
 
-    /* Small Device Slider Section */
+.story-card-title {
+    font-size: 0.767rem;
+    margin: 0 2rem;
+}
 
-    .slider-header {
-        text-align: center;
-        font-size: 1.3rem;
-    }
+.story-card-title-exp {
+    font-size: 1.2rem;
+}
 
-    .card-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 1.25rem;
-    }
+.story-card-description {
+    font-size: .767rem;
+    color: #666666;
+    margin-right: 2rem;
+}
 
-    .card {
-        width: 17.85rem;
-        height: 17rem;
-    }
+.story-card-grid button, .story-card-1 button {
+    font-size: .767rem;
+    border-radius: 2.45rem;
+    color: white;
+    background-color: #95B226;
+    border: 0px;
+    padding: .4rem .5rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0 auto;
+    position: relative;
+    bottom: 1.2rem;
+    font-family: var(--root-font-family);
+    width: 9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    .dot {
-        display: none;
-    }
+.story-card-1 button {
+    left: -7rem;
+    background-color: #3CD8E8;
+    padding: .8rem;
+    bottom: 1.6rem;
+}
 
-    .card img {
-        height: 4.683rem;
-        width: 4.683rem;
-        margin: 1.6rem auto 1.6rem auto
-    }
+.story-card-grid:nth-child(2) button, .story-card-min button {
+    background-color: #5D58F0;
+}
 
-    .card-title {
-        font-size: .8125rem;
-        font-weight: bold;
-        line-height: 1.04rem;
-        margin: 0 1.1rem;
-    }
+.btn-view-all {
+    margin: 3rem auto 4rem;
+}
 
-    .card-description {
-        font-size: 0.511rem;
-        font-weight: var(--font-weight-medium);
-        line-height: 0.96rem;
-        margin: 1rem 4rem;
-        /* margin: 0 auto 1.1rem auto; */
-    }
+.story-card-min {
+    display: none;
+}
 
-    .card a {
-        font-size: 0.511rem;
-        font-weight: var(--font-weight-medium);
-        line-height: 0.96rem;
-    }
+button {
+    cursor: pointer;
 }
